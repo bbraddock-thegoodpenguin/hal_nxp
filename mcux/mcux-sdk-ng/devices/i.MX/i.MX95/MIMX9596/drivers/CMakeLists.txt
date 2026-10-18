@@ -31,3 +31,12 @@ if (CONFIG_MCUX_COMPONENT_driver.trdc_soc)
     mcux_add_source( SOURCES fsl_trdc_soc.h )
     mcux_add_include( INCLUDES . )
 endif()
+
+mcux_add_source( SOURCES fsl_ccm.c fsl_ccm.h)
+mcux_add_source( SOURCES fsl_fract_pll.c fsl_fract_pll.h)
+mcux_add_source( SOURCES fsl_fro.c fsl_fro.h)
+mcux_add_source( SOURCES fsl_src.c fsl_src.h)
+
+mcux_add_source( SOURCES fsl_cpu.c fsl_cpu.h)
+mcux_add_source( SOURCES fsl_power.c fsl_power.h)
+mcux_add_source( SOURCES fsl_def.h)

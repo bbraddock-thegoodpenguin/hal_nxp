@@ -248,7 +248,7 @@
 **                          MIMX95N6XVZXN_cm7
 **
 **     Version:             rev. 4.0, 2026-02-28
-**     Build:               b260721
+**     Build:               b260305
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for RGPIO
@@ -3563,6 +3563,100 @@ typedef struct {
  * @}
  */ /* end of group RGPIO_Register_Masks */
 
+/* RGPIO - Peripheral instance base addresses */
+#if (defined(__ARM_FEATURE_CMSE) && (__ARM_FEATURE_CMSE & 0x2))
+/** Peripheral GPIO1 base address */
+#define GPIO1_BASE (0x57400000u)
+/** Peripheral GPIO1 base address */
+#define GPIO1_BASE_NS (0x47400000u)
+/** Peripheral GPIO1 base pointer */
+#define GPIO1 ((RGPIO_Type *)GPIO1_BASE)
+/** Peripheral GPIO1 base pointer */
+#define GPIO1_NS ((RGPIO_Type *)GPIO1_BASE_NS)
+/** Peripheral GPIO2 base address */
+#define GPIO2_BASE (0x53810000u)
+/** Peripheral GPIO2 base address */
+#define GPIO2_BASE_NS (0x43810000u)
+/** Peripheral GPIO2 base pointer */
+#define GPIO2 ((RGPIO_Type *)GPIO2_BASE)
+/** Peripheral GPIO2 base pointer */
+#define GPIO2_NS ((RGPIO_Type *)GPIO2_BASE_NS)
+/** Peripheral GPIO3 base address */
+#define GPIO3_BASE (0x53820000u)
+/** Peripheral GPIO3 base address */
+#define GPIO3_BASE_NS (0x43820000u)
+/** Peripheral GPIO3 base pointer */
+#define GPIO3 ((RGPIO_Type *)GPIO3_BASE)
+/** Peripheral GPIO3 base pointer */
+#define GPIO3_NS ((RGPIO_Type *)GPIO3_BASE_NS)
+/** Peripheral GPIO4 base address */
+#define GPIO4_BASE (0x53840000u)
+/** Peripheral GPIO4 base address */
+#define GPIO4_BASE_NS (0x43840000u)
+/** Peripheral GPIO4 base pointer */
+#define GPIO4 ((RGPIO_Type *)GPIO4_BASE)
+/** Peripheral GPIO4 base pointer */
+#define GPIO4_NS ((RGPIO_Type *)GPIO4_BASE_NS)
+/** Peripheral GPIO5 base address */
+#define GPIO5_BASE (0x53850000u)
+/** Peripheral GPIO5 base address */
+#define GPIO5_BASE_NS (0x43850000u)
+/** Peripheral GPIO5 base pointer */
+#define GPIO5 ((RGPIO_Type *)GPIO5_BASE)
+/** Peripheral GPIO5 base pointer */
+#define GPIO5_NS ((RGPIO_Type *)GPIO5_BASE_NS)
+/** Array initializer of RGPIO peripheral base addresses */
+#define RGPIO_BASE_ADDRS                                          \
+    {                                                             \
+        GPIO1_BASE, GPIO2_BASE, GPIO3_BASE, GPIO4_BASE GPIO4_BASE \
+    }
+/** Array initializer of RGPIO peripheral base pointers */
+#define RGPIO_BASE_PTRS                   \
+    {                                     \
+        GPIO1, GPIO2, GPIO3, GPIO4, GPIO5 \
+    }
+/** Array initializer of RGPIO peripheral base addresses */
+#define RGPIO_BASE_ADDRS_NS                                                       \
+    {                                                                             \
+        GPIO1_BASE_NS, GPIO2_BASE_NS, GPIO3_BASE_NS, GPIO4_BASE_NS, GPIO5_BASE_NS \
+    }
+/** Array initializer of RGPIO peripheral base pointers */
+#define RGPIO_BASE_PTRS_NS                               \
+    {                                                    \
+        GPIO1_NS, GPIO2_NS, GPIO3_NS, GPIO4_NS, GPIO5_NS \
+    }
+#else
+/** Peripheral GPIO1 base address */
+#define GPIO1_BASE (0x47400000u)
+/** Peripheral GPIO1 base pointer */
+#define GPIO1      ((RGPIO_Type *)GPIO1_BASE)
+/** Peripheral GPIO2 base address */
+#define GPIO2_BASE (0x43810000u)
+/** Peripheral GPIO2 base pointer */
+#define GPIO2      ((RGPIO_Type *)GPIO2_BASE)
+/** Peripheral GPIO3 base address */
+#define GPIO3_BASE (0x43820000u)
+/** Peripheral GPIO3 base pointer */
+#define GPIO3      ((RGPIO_Type *)GPIO3_BASE)
+/** Peripheral GPIO4 base address */
+#define GPIO4_BASE (0x43840000u)
+/** Peripheral GPIO4 base pointer */
+#define GPIO4      ((RGPIO_Type *)GPIO4_BASE)
+/** Peripheral GPIO5 base address */
+#define GPIO5_BASE (0x43850000u)
+/** Peripheral GPIO5 base pointer */
+#define GPIO5      ((RGPIO_Type *)GPIO5_BASE)
+/** Array initializer of RGPIO peripheral base addresses */
+#define RGPIO_BASE_ADDRS                                           \
+    {                                                              \
+        GPIO1_BASE, GPIO2_BASE, GPIO3_BASE, GPIO4_BASE, GPIO5_BASE \
+    }
+/** Array initializer of RGPIO peripheral base pointers */
+#define RGPIO_BASE_PTRS                   \
+    {                                     \
+        GPIO1, GPIO2, GPIO3, GPIO4, GPIO5 \
+    }
+#endif
 
 /*!
  * @}
