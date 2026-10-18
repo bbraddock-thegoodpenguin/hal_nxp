@@ -467,10 +467,10 @@ typedef struct {
   } GPR_SHARED2_AUTHEN;
   struct {                                         /* offset: 0x4860, array step: 0x20 */
     struct {                                         /* offset: 0x4860 */
-      __I  uint32_t RW;                                /**< General Purpose Register, offset: 0x4860 */
-      __I  uint32_t SET;                               /**< General Purpose Register, offset: 0x4864 */
-      __I  uint32_t CLR;                               /**< General Purpose Register, offset: 0x4868 */
-      __I  uint32_t TOG;                               /**< General Purpose Register, offset: 0x486C */
+      __IO  uint32_t RW;                                /**< General Purpose Register, offset: 0x4860 */
+      __IO  uint32_t SET;                               /**< General Purpose Register, offset: 0x4864 */
+      __IO  uint32_t CLR;                               /**< General Purpose Register, offset: 0x4868 */
+      __IO  uint32_t TOG;                               /**< General Purpose Register, offset: 0x486C */
     } GPR_SHARED;
     struct {                                         /* offset: 0x4870 */
       __IO uint32_t RW;                                /**< GPR access control, offset: 0x4870 */
